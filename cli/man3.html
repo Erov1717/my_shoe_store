@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<style>
+    .product-info {
+  max-width: 400px;
+  margin-left: 400px;
+  margin-top: -250px;
+}
+
+.product-info h2 {
+  margin-bottom: 10px;
+}
+
+.price span {
+  color: brown;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  gap: 5px;
+}
+
+.quantity input {
+  width: 50px;
+  text-align: center;
+}
+
+.cart-btn {
+  padding: 10px 20px;
+  background: rgb(142, 78, 6);;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart-btn:hover {
+  background: rgb(122, 68, 6);;
+}
+
+.image-container {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      transition: opacity 0.3s ease;
+    }
+
+    .image-container .info {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      color: rgb(47, 46, 46);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .image-container:hover img {
+      opacity: 0;
+    }
+
+    .image-container:hover .info {
+      opacity: 1;
+    }
+
+
+</style>
+<body>
+  <div class="otstup">
+    <div class="glav">
+  <a href="./index.html"><h1>Магазин продаж</h1></a>
+  <h3>Позвоните нам:<br>+996(771)770067</h3>
+  <p>Корзина</p>
+  </div>
+<header>
+<div class="menu">
+   <button>Каталог товаров</button>
+    <div class="submenu">
+      <a class="active" href="./man.html">Мужская обувь</a>
+      <a href="./woman.html">Женская обувь</a>
+    </div>
+</div>
+
+  <nav class="navi">
+<a href="./info.html">О магазине</a>
+<a href="./pay.html">Оплата</a>
+  </nav>
+  </header>
+
+<main>
+   <p style="font-size: 34px;">Original Penguin Lugger </p>
+    <p style="font-size: 12px;"><span style="color: rgb(142, 78, 6);" >Главная</span><span style="color: rgb(142, 78, 6);"><span style="color: rgb(166, 163, 163);"> > </span>Каталог</span><span style="color: rgb(142, 78, 6);"> > Мужская обувь</span><span style="color: rgb(166, 163, 163);"> > Original Penguin Lugger</span></p>
+<p style="font-size: 12px;"><span style="color: rgb(88, 86, 86);">Артикул: 102669  </span><span style="color: rgb(142, 78, 6);">  0 отзывов</span> </p>
+
+<div class="image-container">
+  <img src="https://modern2.advant.design/pictures/product/small/549125_small.png" alt="мужские ботиинки">
+  <div>
+    <p class="info">Это информация о картине</p>
+  </div>
+</div>
+
+<div class="product-info">
+       <div class="quantity">
+        <p>Количество:</p>
+        <input type="number" value="1" min="1">
+      </div>
+
+     <p class="price">Цена: <span>30 950 сом</span></p>
+      <button class="cart-btn">В корзину</button>
+    </div>
+  </div>
+
+</main>
+
+  <footer>
+<p class="end">@2025 Магазин обуви.</p>
+  </footer>
+  </div>
+</body>
+<script>
+
+</script>
+</html>

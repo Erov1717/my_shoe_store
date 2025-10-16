@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<style>
+  .image-container {
+  display: flex;
+  justify-content: end;
+  gap: 62px;
+}
+
+ .image-container img:hover {
+    filter: brightness(60%);
+    background-color: whitesmoke;
+  }
+
+.name_boots {
+  display: flex;
+  justify-content: end;
+}
+
+.name_boots p{
+  font-size: 14px;
+}
+
+p{
+  font-size: 34px;
+  font-weight: lighter;
+  margin-left: 261px;
+}
+
+
+
+</style>
+<body>
+  <div class="otstup">
+    <div class="glav">
+  <a href="./index.html"><h1>Магазин продаж</h1></a>
+  <h3>Позвоните нам:<br>+996(771)770067</h3>
+  <p>Корзина</p>
+  </div>
+<header>
+<div class="menu">
+   <button>Каталог товаров</button>
+    <div class="submenu">
+      <a href="./man.html">Мужская обувь</a>
+      <a class="active" href="./woman.html">Женская обувь</a>
+    </div>
+</div>
+
+  <nav class="navi">
+<a href="./info.html">О магазине</a>
+<a href="./pay.html">Оплата</a>
+  </nav>
+  </header>
+
+  <main>
+
+    <div class="filter-box">
+  <h3>Цена (руб.)</h3>
+
+  <div class="inputs">
+    <input type="number" id="minPrice" value="12000">
+    <input type="number" id="maxPrice" value="27000">
+  </div>
+
+  <div class="range-slider">
+    <input type="range" id="rangeMin" min="0" max="50000" value="12000" step="500">
+    <input type="range" id="rangeMax" min="0" max="50000" value="27000" step="500">
+  </div>
+
+  <div class="buttons">
+    <button class="apply">Применить</button>
+    <button class="reset" onclick="resetFilter()">Сбросить</button>
+  </div>
+</div>
+
+  <p>Женская обувь</p>
+    <p style="font-size: 12px; margin-left: 261px;"><span style="color: rgb(142, 78, 6);" >Главная</span><span style="color: rgb(142, 78, 6);"><span style="color: rgb(166, 163, 163);"> > </span>Каталог</span><span style="color: rgb(166, 163, 163);"> > Женская обувь</span></p>
+  <div class="image-container">
+<a href="./woom1.html">
+  <img src="https://modern2.advant.design/pictures/product/small/549122_small.png" alt="женские ботинки">
+</a>
+    <a href="./woom2.html">
+      <img src="https://modern2.advant.design/pictures/product/small/549124_small.png" alt="женские ботинки">
+    </a>
+    <a href="./woom3.html">
+      <img src="https://modern2.advant.design/pictures/product/small/549129_small.png" alt="женские ботинки">
+    </a>
+  </div>
+
+  <div class="name_boots">
+<p>
+  Frye Jayden Gore
+13 850 руб.
+</p>
+<p>
+  Giuseppe Zanotti i56042
+12 600 руб.
+</p>
+<p>
+  Philipp playin Started Moccasin
+27 000 руб.
+</p>
+  </div>
+  </main>
+
+  <footer>
+<p class="end">@2025 Магазин обуви.</p>
+  </footer>
+  </div>
+</body>
+</html>
